@@ -22,7 +22,9 @@ public class AppTest
         String text = "hello";
         String expectedLog = String.format("%s %s", prefix, text);
         Function<String, String> logFunc = FuncLogger.create(prefix);
-        
+
+        System.out.println(expectedLog);
+
         // act
         String actualLog = logFunc.apply("hello");
 
